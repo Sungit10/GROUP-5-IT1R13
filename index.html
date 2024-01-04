@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeFlix</title>
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script src="https://kit.fontawesome.com/effd3867de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>AnimeFlix</p>
+        </div>
+        <input type="search" placeholder="Search">
+        <ul class="nav-links">
+            <li><a href="#">Genre</a></li>
+            <li><a href="#main">About</a></li>
+            <li><a href="Login/account.html"><button>Log in</button></a></li>
+        </ul>
+        <span class="toggleBox"><i class="fa-solid fa-bars" id="toggle-bar"></i></span>
+    </nav>
+    <header>
+        <div class="left-section">
+            <div class="text-section">
+                <p class="title">Anime<span>Flix</span></p>
+                <p class="description">
+                    Watch various types of <span>Anime</span> and <span>Movies</span>
+                    for a low-cost monthly subscription. san ka punta
+                    to the moon road trip broom broom skrt skrt zoom zoom 
+                </p>
+                <a href="movies/movie.html"><button>Watch now</button></a>
+            </div>
+        </div>
+        <div class="right-section">
+            <p>Now Showing</p>
+            <div class="showing">
+                <div class="showing-image"></div>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="about-section">
+            <p class="about" id="about">About</p>
+            <div class="about-container">
+                <div>
+                    <img src="images/coin.jpg">
+                </div>
+                <div>
+                    <h2>Low-cost monthly subscription</h2>
+                    <p>
+                        Affordable monthly subscription for you to enjoy high quality experience with us.
+                        Watch your favorite anime and Unlimited movies with high quality resolutions.
+                    </p>
+                </div>
+            </div>
+            <div class="about-container">
+                <div>
+                    <img src="images/watching.jpg">
+                </div>
+                <div>
+                    <h2>Watch Everywhere</h2>
+                    <p>
+                        Watch together with your partner, friends and your family. <br>
+                        Watch on your on your Smart TV, Apple TV, or with your Smart Phones. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="socials">
+            <h4>Socials</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="https://github.com/Sungit10" target="_blank">Github</a>
+        </div>
+        <div class="other-links">
+            <h4>Other Links</h4>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+        <div class="contacts">
+            <h4>Contacts</h4>
+            <a href="jansemeros10@gmail.com">jansemeros10@gmail.com</a>
+            <a href="#">09123456789</a>
+            <a href="#">Telegram</a>
+        </div>
+        <div class="credits">
+            <small>Copyright © 2022 AnimeFlix. All Rights Reserved</small>
+            <a href="https://www.facebook.com/itsjanlowed" target="_blank">Powered by Group 5 IT1R13</a>
+        </div>
+    </footer>
+
+    <script>
+        const toggleClick = document.querySelector(".toggleBox")
+        const navBar = document.querySelector(".nav-links")
+
+        toggleClick.addEventListener('click', function() {
+            toggleClick.classList.toggle('active')
+            navBar.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
